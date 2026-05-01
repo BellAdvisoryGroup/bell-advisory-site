@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Bell Advisory Group</title>
+  <meta name="description" content="Begin a conversation with Bell Advisory Group. Tell us about your business and we will determine whether our operational methodology is the right fit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://larrybell.co/contact.html">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='4' fill='%231B3A5C'/><text x='50' y='50' font-family='Inter,sans-serif' font-size='64' font-weight='900' fill='white' text-anchor='middle' dominant-baseline='central'>B</text></svg>">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Bell Advisory Group">
+        <svg class="logo-mark" viewBox="0 0 240 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <text x="0" y="35" font-family="Inter,sans-serif" font-size="36" font-weight="900" fill="currentColor" letter-spacing="3">BELL</text>
+          <line x1="108" y1="12" x2="108" y2="38" stroke="var(--accent-vis)" stroke-width="1.5"/>
+          <text x="118" y="22" font-family="Inter,sans-serif" font-size="10.5" font-weight="300" fill="currentColor" letter-spacing="2.5" opacity="0.6">ADVISORY</text>
+          <text x="118" y="36" font-family="Inter,sans-serif" font-size="10.5" font-weight="300" fill="currentColor" letter-spacing="2.5" opacity="0.6">GROUP</text>
+        </svg>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/capabilities.html">Capabilities</a>
+        <a href="/about.html">Firm</a>
+        <a href="/insights.html">Insights</a>
+        <a href="/contact.html" class="nav-cta">Begin a Conversation</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="page-hero-kicker">Contact</p>
+      <h1>Begin a conversation.</h1>
+      <p>Tell us about your business. We will review your inquiry and respond within one business day to determine whether our methodology is the right fit.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="content-inner reveal">
+      <div class="content-left">
+        <h2>Get in Touch</h2>
+        <div class="contact-meta">
+          <p><strong>Email</strong><br>info@larrybell.co</p>
+          <p><strong>Based in</strong><br>Central Florida<br>Serving nationally</p>
+          <p><strong>Response Time</strong><br>Within one business day</p>
+        </div>
+      </div>
+      <div class="content-right">
+        <form class="form" name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="inquiry">
+          <p class="ohnohoney"><label>Do not fill this out: <input name="bot-field"></label></p>
+
+          <p class="form-intro">Please provide the following information so we can prepare for a productive initial conversation. The more context you share, the more specific our response will be.</p>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="company">Company Name <span class="required">*</span></label>
+              <input type="text" id="company" name="company" required>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="industry">Industry <span class="required">*</span></label>
+              <select id="industry" name="industry" required>
+                <option value="" disabled selected>Select your industry</option>
+                <option>Pool Service</option>
+                <option>HVAC</option>
+                <option>Pest Control</option>
+                <option>Lawn Care / Landscaping</option>
+                <option>Plumbing</option>
+                <option>Electrical</option>
+                <option>Cleaning</option>
+                <option>Restoration</option>
+                <option>Other Home Services</option>
+                <option>Other (non-home services)</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="employees">Number of Employees</label>
+              <select id="employees" name="employees">
+                <option value="" disabled selected>Select range</option>
+                <option>1 - 5</option>
+                <option>6 - 15</option>
+                <option>16 - 30</option>
+                <option>31 - 50</option>
+                <option>50+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="revenue">Annual Revenue Range</label>
+            <select id="revenue" name="revenue">
+              <option value="" disabled selected>Select range</option>
+              <option>Under $500K</option>
+              <option>$500K - $1M</option>
+              <option>$1M - $3M</option>
+              <option>$3M - $5M</option>
+              <option>$5M+</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="challenge">Primary Challenge <span class="required">*</span></label>
+            <select id="challenge" name="challenge" required>
+              <option value="" disabled selected>What is the primary challenge you are facing?</option>
+              <option>Operations depend too heavily on the owner</option>
+              <option>No documented processes or SOPs</option>
+              <option>Difficulty hiring and retaining employees</option>
+              <option>Preparing the business for sale or transition</option>
+              <option>Scaling without losing quality</option>
+              <option>Digital presence and lead generation</option>
+              <option>General operational improvement</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="timeline">Timeline</label>
+            <select id="timeline" name="timeline">
+              <option value="" disabled selected>When are you looking to begin?</option>
+              <option>Immediately</option>
+              <option>Within 30 days</option>
+              <option>Within 90 days</option>
+              <option>Exploring options</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Additional Context</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us anything else that would help us prepare for our initial conversation."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Submit Inquiry</button>
+
+          <p class="form-notice">After submitting, please check your spam or junk folder for our response. We respond to every inquiry within one business day. If you do not hear from us, email <a href="mailto:info@larrybell.co">info@larrybell.co</a> directly.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col footer-col-brand">
+        <svg class="footer-logo-mark" viewBox="0 0 240 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <text x="0" y="35" font-family="Inter,sans-serif" font-size="36" font-weight="900" fill="white" letter-spacing="3">BELL</text>
+          <line x1="108" y1="12" x2="108" y2="38" stroke="var(--accent-vis)" stroke-width="1.5"/>
+          <text x="118" y="22" font-family="Inter,sans-serif" font-size="10.5" font-weight="300" fill="rgba(255,255,255,0.5)" letter-spacing="2.5">ADVISORY</text>
+          <text x="118" y="36" font-family="Inter,sans-serif" font-size="10.5" font-weight="300" fill="rgba(255,255,255,0.5)" letter-spacing="2.5">GROUP</text>
+        </svg>
+        <p class="footer-desc">Strategy. Process. Infrastructure.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-heading">Capabilities</p>
+        <a href="/capabilities.html#process">Process Architecture</a>
+        <a href="/capabilities.html#people">People Systems</a>
+        <a href="/capabilities.html#digital">Digital Infrastructure</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-heading">Firm</p>
+        <a href="/about.html">About</a>
+        <a href="/capabilities.html">Methodology</a>
+        <a href="/insights.html">Insights</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-heading">Contact</p>
+        <a href="mailto:info@larrybell.co">info@larrybell.co</a>
+        <p class="footer-location">Central Florida<br>Serving nationally</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2026 Bell Advisory Group. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
