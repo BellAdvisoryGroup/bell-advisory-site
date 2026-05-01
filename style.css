@@ -857,6 +857,254 @@ details[open] .faq-question::after {
 }
 
 /* ────────────────────────────────────────
+   CASE STUDIES
+   ──────────────────────────────────────── */
+.case-study {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.case-study-header {
+  margin-bottom: 2.5rem;
+}
+.case-study-tag {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-vis);
+  display: block;
+  margin-bottom: 0.8rem;
+}
+.case-study-header h2 {
+  font-family: var(--font-head);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  color: var(--near-black);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.5rem;
+}
+.case-study-context {
+  font-size: 0.86rem;
+  color: var(--text-lt);
+}
+.case-study-body {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 3rem;
+  align-items: start;
+}
+.case-study-narrative h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--near-black);
+  margin: 2rem 0 0.6rem;
+}
+.case-study-narrative h3:first-child { margin-top: 0; }
+.case-study-narrative p {
+  font-size: 0.92rem;
+  color: var(--text-sec);
+  line-height: 1.85;
+  margin-bottom: 0.8rem;
+}
+.case-study-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  position: sticky;
+  top: 80px;
+}
+.metric-card {
+  background: var(--white);
+  padding: 1.2rem 1.4rem;
+}
+.section-shaded .metric-card {
+  background: var(--warm-white);
+}
+.metric-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-lt);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.metric-change {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.metric-before {
+  font-size: 1.1rem;
+  color: var(--text-lt);
+  text-decoration: line-through;
+  font-feature-settings: "tnum" 1;
+}
+.metric-arrow {
+  color: var(--text-lt);
+  font-size: 0.9rem;
+}
+.metric-after {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  color: var(--accent);
+  font-feature-settings: "tnum" 1;
+  line-height: 1;
+}
+.case-study-deliverables {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.deliverables-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-lt);
+  margin-bottom: 0.8rem;
+}
+.deliverable-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.deliverable-tags span {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-sec);
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.9rem;
+  letter-spacing: 0.01em;
+}
+.section-shaded .deliverable-tags span {
+  background: var(--white);
+}
+
+/* ────────────────────────────────────────
+   DELIVERABLE PREVIEWS
+   ──────────────────────────────────────── */
+.deliverable-preview-list {
+  display: flex;
+  flex-direction: column;
+}
+.deliverable-preview {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 1.2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.deliverable-preview:first-child {
+  border-top: 1px solid var(--border);
+}
+.deliverable-preview-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  margin-top: 2px;
+}
+.deliverable-preview-icon svg {
+  width: 22px;
+  height: 22px;
+}
+.deliverable-preview h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--near-black);
+  margin-bottom: 0.35rem;
+}
+.deliverable-preview p {
+  font-size: 0.86rem;
+  color: var(--text-sec);
+  line-height: 1.75;
+  margin-bottom: 0;
+}
+
+/* ────────────────────────────────────────
+   ENGAGEMENT TIMELINE
+   ──────────────────────────────────────── */
+.timeline {
+  margin-top: 1rem;
+}
+.timeline-phase {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.2rem;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.timeline-phase:first-child {
+  border-top: 1px solid var(--border);
+}
+.timeline-week {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-vis);
+  padding-top: 2px;
+}
+.timeline-phase h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--near-black);
+  margin-bottom: 0.3rem;
+}
+.timeline-phase p {
+  font-size: 0.86rem;
+  color: var(--text-sec);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ────────────────────────────────────────
+   PRICING CONTEXT
+   ──────────────────────────────────────── */
+.pricing-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-top: 1rem;
+}
+.pricing-tier {
+  background: var(--white);
+  padding: 1.5rem 1.8rem;
+}
+.section-shaded .pricing-tier {
+  background: var(--warm-white);
+}
+.pricing-tier-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--near-black);
+  margin-bottom: 0.15rem;
+}
+.pricing-tier-range {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.pricing-tier p {
+  font-size: 0.84rem;
+  color: var(--text-sec);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ────────────────────────────────────────
    INNER PAGE HERO
    ──────────────────────────────────────── */
 .page-hero {
@@ -1118,6 +1366,14 @@ details[open] .faq-question::after {
   .comparison-table { font-size: 0.8rem; }
   .comparison-table th,
   .comparison-table td { padding: 0.7rem 0.6rem; }
+  .case-study-body {
+    grid-template-columns: 1fr;
+  }
+  .case-study-metrics {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ────────────────────────────────────────
@@ -1174,6 +1430,17 @@ details[open] .faq-question::after {
   .comparison-table { font-size: 0.76rem; }
   .comparison-table th:first-child,
   .comparison-table td:first-child { width: auto; }
+  .case-study-metrics {
+    grid-template-columns: 1fr;
+  }
+  .deliverable-preview {
+    grid-template-columns: 1fr;
+  }
+  .deliverable-preview-icon { display: none; }
+  .timeline-phase {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
   .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom-inner {
     flex-direction: column;
